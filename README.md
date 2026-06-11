@@ -1,5 +1,6 @@
 # Python-Course-
 Python Programming Course
+
 A comprehensive Python programming course covering basics to advanced topics.
 
 Table of Contents
@@ -14,6 +15,7 @@ Table of Contents
       
 
 Directory Structure
+
 The repository is organized into the following directories:
    ~ basics/: Basic Python syntax and data types
    
@@ -26,9 +28,14 @@ The repository is organized into the following directories:
 
 Code Examples
 Here's an example of a simple "Hello, World!" program in Python:
-`python
+
+python
+
 def main():
+
     print("Hello, World!")
+    
 
 if name == "main":
+
     main()
