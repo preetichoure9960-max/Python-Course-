@@ -1,1 +1,53 @@
+import csv
+with open("students.csv","w" , newline="") as file:
+    writer=csv.writer(file)
+    writer.writerow(["Roll No", "Name", "Branch"])
+    writer.writerow([101, "Preeti", "Computer Engineering"])
+    writer.writerow([102, "Riya", "AI & DS"])
+    
+import csv
+with open("students.csv","r") as file:
+    reader=csv.reader(file)
+    for row in reader:
+        print(row)
+        
+        
+import csv
+data = [
+    [103, "snehal", "ECE"],
+    [104, "Esha", "Civil"]
+]
 
+with open("students.csv","a" , newline="") as file:
+    writer=csv.writer(file)
+    writer.writerows(data)
+    
+import csv
+with open("students.csv", "r") as file:
+    reader=csv.DictReader(file)
+    for row in reader:
+        print(row["Name"],"-", row["Branch"])#"-" is for coming dash between two parametrs
+    
+
+import csv
+
+with open("employee.csv", "w", newline="") as file:
+    fieldnames = ["ID", "Name", "Salary"]
+    writer = csv.DictWriter(file, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow({"ID": 1, "Name": "Preeti", "Salary": 50000})
+    writer.writerow({"ID": 2, "Name": "Riya", "Salary": 60000})
+    
+    
+    
+import csv
+
+count = 0
+
+with open("students.csv", "r") as file:
+    reader = csv.reader(file)
+
+    for row in reader:
+        count += 1
+
+print("Total Rows:", count)
