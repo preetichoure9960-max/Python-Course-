@@ -7,6 +7,7 @@ class Circle(shape):
 
     def area(self):
         return 3.14 * self.radius ** 2
+    
 class Rectangle(shape):
     def __init__(self, width, height):
         self.width = width
@@ -17,6 +18,7 @@ class Rectangle(shape):
 
 def calculate_area(shape: shape):
     return shape.area()
+
 circle = Circle(3)
 rectangle = Rectangle(7, 3)
 

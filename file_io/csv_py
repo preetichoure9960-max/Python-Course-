@@ -39,7 +39,7 @@ with open("employee.csv", "w", newline="") as file:
     writer.writerow({"ID": 2, "Name": "Riya", "Salary": 60000})
     
     
-    
+    #count rows
 import csv
 
 count = 0
